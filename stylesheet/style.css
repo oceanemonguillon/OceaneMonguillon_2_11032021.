@@ -1,0 +1,85 @@
+@font-face /** importation de la police Raleway**/
+{
+    font-family: 'Raleway';
+    src:   url("Raleway/Raleway-VariableFont_wght.ttf") format('truetype');
+}
+
+body
+{
+    font-family: Raleway ;
+    font-size: medium;
+}
+
+/** ------------- LOGO ---------------**/
+
+.logo /** taille et position du logo**/
+{
+        max-width: 8%;
+        height: auto;
+        float: left;
+
+}
+/** ------------- MENU ---------------**/
+
+
+.liste_menu /**couleurs et position du menu (éléments aligné: inline)**/
+{
+    list-style-type: none;
+    text-align: right; 
+    margin-top: 2%;
+}
+
+#hebergements
+{
+  
+    display: inline;
+    margin-right: 2%;
+}
+
+#activites
+{
+    display: inline;
+    margin-right: 2%;
+}
+
+#inscription
+{
+    margin-right: 0%;
+    display: inline;
+}
+
+#lien_hebergements /**ancre vers section hébergements**/
+{
+    color: black;
+    text-decoration: none;
+}
+
+#lien_activites /**ancre vers section activités**/
+{
+    color: black ;
+    text-decoration: none;
+}
+
+#lien_inscription /**lien vers page inscription**/
+{
+    color: #0065FC ;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#lien_activites:focus /**ancre vers section activités cliquée**/
+{
+    color:#0065FC;
+    border-top: thick solid #0065FC;
+    padding-top: 2%;
+    
+}
+
+#lien_hebergements:focus /**ancre vers section hébergements cliquée**/
+{
+    color:#0065FC;
+    border-top: thick solid #0065FC;
+    padding-top: 2%;
+}
+
+/** ------------- RECHERCHE ---------------**/
