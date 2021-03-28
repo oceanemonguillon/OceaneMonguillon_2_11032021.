@@ -10,6 +10,11 @@ body
     font-size: medium;
 }
 
+p
+{
+    font-size: 1em;
+}
+
 /** ------------- LOGO ---------------**/
 
 .logo /** taille et position du logo**/
@@ -83,3 +88,41 @@ body
 }
 
 /** ------------- RECHERCHE ---------------**/
+
+h1 
+{
+    font-style: bold;
+    font-size: 1.4em;
+    margin-top: 4%;
+}
+
+#accroche
+{
+    margin-top: 1%;
+}
+
+.fa-map-marker-alt
+{
+    background-color:#F2F2F2;
+    border: 1px;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#saisie
+{
+    padding: 15px;
+    margin-left: none;
+    margin-right: none;
+}
+
+#boutton_rechercher
+{
+    background-color: #0065FC;
+    margin-left:none;
+    border: 1px;
+    padding: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
