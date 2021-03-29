@@ -7,11 +7,11 @@
 body
 {
     font-family: Raleway ;
-    font-size: medium;
 }
 
 p
 {
+    font-style: normal;
     font-size: 1em;
 }
 
@@ -96,12 +96,7 @@ h1
     margin-top: 4%;
 }
 
-#accroche
-{
-    margin-top: 1%;
-}
-
-.fa-map-marker-alt
+.fa-map-marker-alt /**icone barre de recherche**/
 {
     background-color:#F2F2F2;
     border: 1px;
@@ -110,19 +105,49 @@ h1
     border-bottom-left-radius: 10px;
 }
 
-#saisie
+#saisie 
 {
     padding: 15px;
-    margin-left: none;
-    margin-right: none;
+    border-left: none;
+    border-right:none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
 }
 
-#boutton_rechercher
+#boutton_rechercher 
 {
     background-color: #0065FC;
-    margin-left:none;
     border: 1px;
     padding: 15px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    color: white;
+}
+
+.filtres 
+{
+    font-weight: bold; 
+    font-size: 1em;
+    display: inline;
+    margin-left: 0%;
+    margin-right: 5%;
+}
+
+button
+{
+    border: 2px solid #F2F2F2;
+    border-radius: 40px;
+    width: auto;
+    line-height: 50px;
+    margin-top: 3%;
+    background-color: white;
+}
+
+.fa-money-bill-wave
+{
+    color: #0065FC;
+    background-color: #DEEBFF ;
+    padding: 15px;
+    border: #DEEBFF;
+    border-radius: 100px;
 }
