@@ -26,32 +26,35 @@
                
                 <p> En plein centre ville ou en pleine nature </p>
                 
-                <form>
+                <form> <!-- barre de recherche -->
                     <i class="fas fa-map-marker-alt"></i>
-                    <input type="search" name="recherche" placeholder="Marseille, France">
-                    <input type="submit"  value="Rechercher" disabled="disabled">
+                    <input type="search" name="recherche" id="saisie" placeholder="Marseille, France">
+                    <input type="submit"  value="Rechercher" id="boutton_rechercher" disabled="disabled">
                 </form>
                 
-                <p> Filtres </p>
+                <p class="filtres"> Filtres </p> <!-- différents filtres de recherche et icones-->
 
-                <div class="economique">      
-                    <button type="button" class="fas fa-money-bill-wave"> Économique </button>
+                <div class="filtres ensemble_filtres">      
+                    <i class="fas fa-money-bill-wave icones_filtres"></i> <button type="button">Économique </button> 
                 </div>
 
-                <div class="familial">
-                    <button type="button" class="fas fa-child"> Familial </button>
+                <div class="filtres ensemble_filtres">
+                   <i class="fas fa-child icones_filtres"></i> <button type="button"> Familial </button>
                 </div>
 
-                <div class="romantique">
-                    <button type="button" class="fas fa-heart"> Romantique </button>
+                <div class="filtres ensemble_filtres">
+                    <i class="fas fa-heart icones_filtres"></i><button type="button"> Romantique </button>
                 </div>
 
-                <div class="animaux autorisés">
-                    <button type="button" class="fas fa-dog"> Animaux autorisés </button>
+                <div class="filtres ensemble_filtres">
+                   <i class="fas fa-dog icones_filtres"></i> <button type="button"> Animaux autorisés </button>
                 </div>
-                <i class="fas fa-info-circle"> Plus de 500 logements sont disponibles dans cette ville</i>
-
+        
+                <p> <i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+              
             </section>
+
+            
 
             <section> 
 
