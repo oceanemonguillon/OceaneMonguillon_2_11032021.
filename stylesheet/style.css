@@ -140,10 +140,9 @@ button
     border: none;
     width :auto;
     margin-top: 2%;
-    background-color: white;
     font-family: Raleway ;
     font-weight: bold;
-    
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .ensemble_filtres
@@ -155,6 +154,12 @@ button
     padding-left: 0%;
     padding-top:0.3em;
     padding-bottom: 0.3em;
+    
+}
+
+.ensemble_filtres:hover
+{
+    background: linear-gradient(to right,#DEEBFF,#0065fc);
 }
 
 
