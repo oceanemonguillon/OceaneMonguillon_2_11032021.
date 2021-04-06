@@ -11,6 +11,21 @@ body
     font-family: Raleway ;
 }
 
+header
+{
+    margin: 2%;
+}
+
+nav
+{
+    margin: 2%;
+}
+
+main
+{
+    margin: 2%;
+}
+
 h1 
 {
     font-weight: bold;
@@ -22,12 +37,13 @@ h2
 {
     font-weight: bold;
     font-size: 1.4em;
+    margin-top: 2%;
 }
 
 h3
 {
-        font-weight: bold;
-        font-size: 1.2em;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 p
@@ -43,7 +59,6 @@ a
     color: black;
 }
 
-
 button
 {
     border: none;
@@ -53,6 +68,7 @@ button
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0);
 }
+
 
 /** ------------- LOGO ---------------**/
 
@@ -73,45 +89,20 @@ button
     margin-top: 2%;
 }
 
-#hebergements
+#menu_hebergements, #menu_activites
 {
   
     display: inline;
     margin-right: 2%;
 }
 
-#activites
-{
-    display: inline;
-    margin-right: 2%;
-}
-
-#inscription
+#menu_inscription
 {
     margin-right: 0%;
     display: inline;
 }
 
-#lien_hebergements /**ancre vers section hébergements**/
-{
-    color: black;
-    text-decoration: none;
-}
-
-#lien_activites /**ancre vers section activités**/
-{
-    color: black ;
-    text-decoration: none;
-}
-
-#lien_inscription /**lien vers page inscription**/
-{
-    color: #0065FC ;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#lien_activites:focus /**ancre vers section activités cliquée**/
+#menu_activites a:focus, #menu_hebergements a:focus, #menu_inscription a:focus /**ancre vers sections activités et hebergements cliquées**/
 {
     color:#0065FC;
     border-top: thick solid #0065FC;
@@ -119,11 +110,10 @@ button
     
 }
 
-#lien_hebergements:focus /**ancre vers section hébergements cliquée**/
+a.active
 {
-    color:#0065FC;
-    border-top: thick solid #0065FC;
-    padding-top: 2%;
+    color:#0065fc ;
+    font-weight: bold;
 }
 
 /** ------------- RECHERCHE ---------------**/
@@ -205,75 +195,84 @@ button
     
 }
 
-/** ------------- HEBERGEMENTS ---------------**/
-
-.categorie_hebergements
-{
-    margin-top: 2%;
-    padding: 1%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    inline-size: 68%;
-    block-size: 20%;
-    background-color: #F2F2F2;
-    border-radius: 1.5em;
-    
-}
-
-#titre_hebergement
-{
-    margin-right: 73%;
-    margin-bottom: 1%;
-    margin-left: 0%;
-}
-
-#afficher_plus
-{
-    margin-top: 4%;
-    margin-right: 88%;
-    
-}
-
-.images_hebergements
-{
-    width: 100%;
-    height: 10em;
-    border-top-left-radius: 1.5em;
-    border-top-right-radius: 1.5em;    
-}
-
-.case_hebergement
-{
-    line-height:0%;
-    border : white solid 4px;
-    border-radius: 1.5em;
-    width: 30%;
-    height: 15em;
-    margin-top: 2%;
-    background-color:white;
-
-}
-
-/** ------------- LES PLUS POPULAIRES ---------------**/
+/** ------------- FLEXBOX LOGEMENTS ---------------**/
 
 .logements
 {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;    
+}
+
+/** ------------- HEBERGEMENTS ---------------**/
+
+.categorie_hebergements
+{
+    margin-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-content: space-around;
+    width: 60%;
+    height: 45em;
+    background-color: #F2F2F2;
+    border-radius: 1.5em;
     
 }
 
-.les_plus_populaires
+.categorie_hebergements h2:nth-child(1)
 {
-    margin-top: 2%;
-    padding: 1%;
+    width: 100%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+#afficher_plus
+{
+    margin-top: 0%;
+    width: 100%;
+}
+
+.images_hebergements
+{
+    width: 100%;
+    height: 65%;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;    
+}
+
+.annonces_hebergements
+{
+    line-height:0%;
+    border : white solid 4px;
+    border-radius: 1.5em;
+    width: 30%;
+    height: 30%;
+    background-color:white;
+    box-shadow: 1px 1px 10px grey;
+}
+
+.annonces_hebergements h3, .annonces_hebergements p, .annonces_hebergements div
+{
+    margin-left: 5%;
+}
+
+/** ------------- LES PLUS POPULAIRES ---------------**/
+
+.categorie_populaires
+{
+    margin-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    inline-size: 25%;
+    justify-content: space-around;
+    align-content: center;
+    width: 28%;
+    height: 45em;
     background-color: #F2F2F2;
     border-radius: 1.5em;
     
@@ -282,31 +281,142 @@ button
 .images_populaires
 {
     width: 35%;
-    height: 10em;
+    height: 100%;
     border-top-left-radius: 1.5em;
     border-bottom-left-radius: 1.5em;
     float: left;    
-    padding-right: 20px;
 }
 
-.case_populaires
+.annonces_populaires
 {
-    text-align: left;
     border : white solid 4px;
     border-radius: 1.5em;
     width: 95%;
-    height: 10em;
+    height: 23%;
     background-color:white;
     justify-content: space-around;
-    
+    box-shadow: 1px 1px 10px grey;
 }
 
 .fa-chart-line
 {
-  margin-left: 10em;
-
+    float: right;
 }
 
-.fa_star_populaire{
-    margin-top: 10%;   
+.annonces_populaires h3, .annonces_populaires p 
+{
+    margin-top: 1%;
+    margin-left: 40%;
+    margin-bottom: 1%;
+}
+
+.annonces_populaires div
+{
+    margin-top: 15%;
+    margin-left: 40%;
+}
+
+/** ------------- ETOILES ---------------**/
+
+.fa-star
+{
+    color: #F2F2F2;
+}
+
+i.active
+{
+    color: #0065FC;
+}
+
+/** ------------- ACTIVITES ---------------**/
+
+
+.activites
+{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+    align-content: space-between;
+    background-color: white;
+    width: 100%;
+    height: 35em;
+}
+
+.annonces_activites
+{
+    border : white solid 4px;
+    border-radius: 1.5em;
+    box-shadow: 3px 3px 5px #F2F2F2;
+    width: 23%;
+    background-color:white;
+    padding-bottom: 3%;
+}
+
+.images_activites
+{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;   
+}
+
+
+.annonces_activites:nth-child(1)
+{
+    height: 90%;
+}
+
+.annonces_activites:nth-child(2)
+{
+    height: 40%;
+}
+
+.annonces_activites:nth-child(3)
+{
+    height: 30%;
+}
+
+.annonces_activites:nth-child(4)
+{
+    height: 90%;
+}
+.annonces_activites:nth-child(5)
+{
+    height: 30%;
+}
+.annonces_activites:nth-child(6)
+{
+    height: 40%;
+}
+
+.annonces_activites h3
+{
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** ------------- FOOTER ---------------**/
+
+footer
+{
+    background-color: #0065FC;
 }
