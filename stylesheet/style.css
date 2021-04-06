@@ -170,7 +170,7 @@ a.active
     
 }
 
-.ensemble_filtres:hover
+.ensemble_filtres:hover /**Survol des filtres**/
 {
     background: linear-gradient(to right,#DEEBFF,#0065fc);
 }
@@ -197,7 +197,7 @@ a.active
 
 /** ------------- FLEXBOX LOGEMENTS ---------------**/
 
-.logements
+.logements /**comprends hebergements et populaires**/
 {
     display: flex;
     flex-direction: row;
@@ -206,7 +206,7 @@ a.active
 
 /** ------------- HEBERGEMENTS ---------------**/
 
-.categorie_hebergements
+.categorie_hebergements 
 {
     margin-top: 1%;
     padding-left: 2%;
@@ -223,7 +223,7 @@ a.active
     
 }
 
-.categorie_hebergements h2:nth-child(1)
+.categorie_hebergements h2:nth-child(1) /**titre "Hébergements à Marseille"**/
 {
     width: 100%;
     margin-bottom: 0%;
@@ -255,7 +255,7 @@ a.active
     box-shadow: 1px 1px 10px grey;
 }
 
-.annonces_hebergements h3, .annonces_hebergements p, .annonces_hebergements div
+.annonces_hebergements h3, .annonces_hebergements p, .annonces_hebergements div /**Description des annonces**/
 {
     margin-left: 5%;
 }
@@ -303,14 +303,14 @@ a.active
     float: right;
 }
 
-.annonces_populaires h3, .annonces_populaires p 
+.annonces_populaires h3, .annonces_populaires p /**Description des annonces**/
 {
     margin-top: 1%;
     margin-left: 40%;
     margin-bottom: 1%;
 }
 
-.annonces_populaires div
+.annonces_populaires div /** Etoiles populaires**/
 {
     margin-top: 15%;
     margin-left: 40%;
@@ -331,7 +331,7 @@ i.active
 /** ------------- ACTIVITES ---------------**/
 
 
-.activites
+.categorie_activites
 {
     margin-top: 2%;
     display: flex;
@@ -363,9 +363,9 @@ i.active
 }
 
 
-.annonces_activites:nth-child(1)
+.annonces_activites:nth-child(1) /**Tailles des différentes annonces dans l'ordre de visualisation**/
 {
-    height: 90%;
+    height: 91%;
 }
 
 .annonces_activites:nth-child(2)
@@ -380,7 +380,7 @@ i.active
 
 .annonces_activites:nth-child(4)
 {
-    height: 90%;
+    height: 91%;
 }
 .annonces_activites:nth-child(5)
 {
@@ -397,26 +397,31 @@ i.active
     margin-left: 5%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /** ------------- FOOTER ---------------**/
 
 footer
 {
-    background-color: #0065FC;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    background-color: #F2F2F2;
+    line-height: 2em;
+}
+
+footer div
+{
+    margin-right: 15%;
+}
+
+
+footer  ul
+{
+    list-style-type: none;
+    text-align: left; 
+    width: 15em;  
+}
+
+footer h3{
+    margin-left: 14%;   
+    width:100%;
 }
