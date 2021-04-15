@@ -195,6 +195,9 @@ a.active
     display: flex;
     flex-direction: row;
     height: max-content;
+    justify-content: left;
+    align-content: left;
+    align-items: top;
 }
 
 .fa-info-circle
@@ -207,7 +210,6 @@ a.active
     margin-top: 1%; 
     height: min-content; 
 }
-
 
 
 /** ------------- FLEXBOX LOGEMENTS ---------------**/
@@ -249,6 +251,7 @@ a.active
 {
     margin-top: 0%;
     width: 100%;
+    font-weight: bold;
 }
 
 .images_hebergements
@@ -398,7 +401,7 @@ i.active
     align-content: space-between;
     background-color: white;
     width: 100%;
-    height: 30em;
+    height: 35em;
 }
 
 .annonces_activites
@@ -422,7 +425,7 @@ i.active
 
 .annonces_activites:nth-child(1) /**Tailles des différentes annonces dans l'ordre de visualisation**/
 {
-    height: 90%;
+    height: 89%;
 }
 
 .annonces_activites:nth-child(2)
@@ -437,7 +440,7 @@ i.active
 
 .annonces_activites:nth-child(4)
 {
-    height: 90%;
+    height: 89%;
 }
 .annonces_activites:nth-child(5)
 {
@@ -488,7 +491,7 @@ footer h3{
 }
 
 
-/** ------------- RESPONSIVE TELEPHONE ---------------**/
+/** ---------------------------- RESPONSIVE TELEPHONE -------------------------------**/
 
 @media only screen and (max-width: 768px)
 {
@@ -521,7 +524,7 @@ footer h3{
         margin-left: 4%;
     }
 
-    /** header ------------------------------------------------------------------------------- **/
+    /** header -------------------------------------- **/
 
     .logo /** taille et position du logo**/
     {
@@ -576,7 +579,7 @@ footer h3{
     
 
  
-    /**barre de recherche ------------------------------------------------------------------------------- **/
+    /**barre de recherche ----------------------------- **/
 
     .texte
     {
@@ -608,7 +611,7 @@ footer h3{
         font-weight: bold;
         font-size: 1.2em;    
     }
-    /** filtres ------------------------------------------------------------------------------- **/
+    /** filtres ---------------------------------------**/
 
     .filtres 
     {
@@ -677,7 +680,7 @@ footer h3{
     }
 
     
-    /** hebergements ------------------------------------------------------------------------------- **/
+    /** hebergements ----------------------------------- **/
 
     .logements /**comprends hebergements et populaires**/
     {
@@ -694,7 +697,6 @@ footer h3{
         margin-bottom: 6%;
         width: 100%;
         height: 100%;
-        background-color: #F2F2F2;
         border-radius: 0em;   
     }
 
@@ -756,7 +758,7 @@ footer h3{
         font-weight: bold;
     }
 
-    /** activités ------------------------------------------------------------------------------- **/
+    /** activités ---------------------------------------**/
 
     #activites /**titre Activités a Marseille**/
     {
@@ -809,7 +811,7 @@ footer h3{
         margin-top: 6%;
         margin-left: 5%;
     }
-    /** footer ------------------------------------------------------------------------------- **/
+    /** footer --------------------------------------- **/
     footer
     {
         display: flex;
@@ -823,4 +825,305 @@ footer h3{
         width:100%;
         margin-left: 2%;
     }
+}
+
+/** ---------------------------- RESPONSIVE TABLETTES -------------------------------**/
+
+@media only screen and (min-width: 769px)and (max-width: 1024px)
+{
+    body
+    {
+        width: 100%;
+        margin: 0%;
+    }
+
+    header
+    {
+        margin: 0%;
+    }
+
+    nav
+    {
+        margin: 0%;
+    }
+
+    main
+    {
+        margin: 0%;
+    }
+
+    h1 
+    {
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-top: 5%;
+        margin-left: 4%;
+    }
+
+    /** header -------------------------------------- **/
+
+    .logo /** taille et position du logo**/
+    {
+        max-width: 20%;
+        height: auto;
+        float: left;
+        margin-bottom: 7%;
+        margin-left: 1%;
+        margin-top: 1%;
+    }
+
+    #menu_inscription
+    {
+        margin-right: 3%;
+        margin-top: 1%;
+        float: right;
+    }
+
+
+    .liste_menu /**couleurs et position du menu (éléments aligné: inline)**/
+    {
+        list-style-type: none;
+        text-align: center; 
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        padding-left: 0%;
+    }
+   
+    #menu_hebergements, #menu_activites
+    { 
+        display: inline;
+        margin-right: 0%;
+        margin-left: 0%;
+        width: 50%;
+        padding-bottom: 4%;
+        border-bottom: 2px solid #F2F2F2;
+    }
+    
+    #menu_activites a:focus, #menu_hebergements a:focus /**ancre vers sections activités et hebergements cliquées**/
+    {
+        border-top: none;
+        padding-top: 0%;
+    }
+
+    #menu_hebergements:active, #menu_activites:active
+    {
+        border-bottom: 2px solid #0065fc;      
+        color: #0065fc;   
+    }
+
+    /**barre de recherche ----------------------------- **/
+
+    .texte
+    {
+        font-style: normal;
+        font-size: 1em;
+        margin-left: 4%;
+    }
+
+    form
+    {
+        margin-left: 4%;
+        margin-bottom: 7%;
+        margin-top: 7%;
+    }
+    
+    /** filtres ---------------------------------------**/
+
+    .filtres 
+    {
+        font-weight: bold; 
+        font-size: 1em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: max-content;
+        height: auto;
+        margin-right: 3%;
+    }
+
+    .filtres:nth-child(1)
+    {
+        width: 5%;
+    }
+
+    .ensemble_filtres
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between ;
+        width: 90%;
+        height: 10%;
+        margin-left: 4%;
+
+    }
+
+    .ensemble_filtres div
+    {
+        height: 100%;
+        padding-top:0em;
+        padding-bottom: 0em;
+    }
+    
+    .info
+    {
+        justify-content: left;
+        align-content: left;
+        align-items: top;
+        margin-left: 4%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .fa-info-circle
+    {
+        margin-right: 0%;
+        margin-top: 0%; 
+    }
+
+    .info p
+    {
+        margin-top: 0%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    /** hebergements ----------------------------------- **/
+
+    .logements /**comprends hebergements et populaires**/
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        align-items: center;   
+    }
+
+    .categorie_populaires
+    {
+        order: 1;
+        margin-top: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        width: 95%;
+        height: 30em;    
+    }
+
+    .categorie_populaires h2
+    {
+        width: 95%;
+    }
+
+    .annonces_populaires
+    {
+        display: flex;
+        flex-direction: row;
+        width: 45%;
+        height: 30%;
+    }
+
+    .categorie_hebergements 
+    {
+        order: 2;
+        margin-top: 7%;
+        padding-left: 0%;
+        padding-right: 0%;
+        justify-content: space-around;
+        width: 95%;        
+    }
+    
+    .categorie_hebergements h2:nth-child(1) /**titre "Hébergements à Marseille"**/
+    {
+        width: 95%;
+    }
+    
+    #afficher_plus
+    {
+        width: 95%;
+    }
+    
+    .images_hebergements
+    {
+        width: 100%;
+        height: 60%;
+        border-top-left-radius: 1.5em;
+        border-top-right-radius: 1.5em;    
+    }
+    
+    .annonces_hebergements
+    {
+        height: 33%;
+    }
+
+    /** Activités -----------------------------**/
+
+    #activites /**titre Activités a Marseille**/
+    {
+        margin-top: 5%;
+        margin-bottom: 0%;
+        margin-left: 4%;
+    }
+
+    .categorie_activites
+    {   
+        margin-top: 2%;
+        background-color: white;
+        width:95%;
+        height: 65em;
+        margin-bottom: 5%;
+    }
+
+    .annonces_activites
+    {
+        box-shadow: 1px 1px 10px grey;
+        padding-bottom: 3%;
+        margin-left: 4%;
+        margin-top: 5%;
+        margin-bottom: 0%;
+        width: 45%;
+    }
+    
+
+    .images_activites
+    {
+        width: 100%;
+        height: 80%;
+        border-top-left-radius: 1.5em;
+        border-top-right-radius: 1.5em;
+        object-fit: cover;
+    }
+
+    .annonces_activites:nth-child(1),.annonces_activites:nth-child(2),.annonces_activites:nth-child(3), .annonces_activites:nth-child(4),
+    .annonces_activites:nth-child(5), .annonces_activites:nth-child(6)/**Tailles des différentes annonces dans l'ordre de visualisation**/
+    {
+        height: 15em;
+    }
+
+    .annonces_activites h3
+    {
+        margin-top: 6%;
+        margin-left: 5%;
+    }
+
+    /**Footer ---------------------------------------**/
+
+    footer
+    {
+        justify-content:space-between;
+        line-height: 2em;
+
+    }
+
+    footer div
+    {
+        margin-right: 0%;
+        width: 30%;
+    }
+
 }
