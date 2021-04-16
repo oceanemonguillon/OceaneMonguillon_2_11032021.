@@ -267,7 +267,7 @@ a.active
     border : white solid 4px;
     border-radius: 1.5em;
     width: 30%;
-    height: 30%;
+    height: 35%;
     background-color:white;
     box-shadow: 1px 1px 10px grey;
 }
@@ -397,11 +397,11 @@ i.active
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between ;
+    justify-content: space-between;
     align-content: space-between;
     background-color: white;
     width: 100%;
-    height: 35em;
+    height: 30em;
 }
 
 .annonces_activites
@@ -425,7 +425,7 @@ i.active
 
 .annonces_activites:nth-child(1) /**Tailles des différentes annonces dans l'ordre de visualisation**/
 {
-    height: 89%;
+    height: 87%;
 }
 
 .annonces_activites:nth-child(2)
@@ -440,7 +440,7 @@ i.active
 
 .annonces_activites:nth-child(4)
 {
-    height: 89%;
+    height: 87%;
 }
 .annonces_activites:nth-child(5)
 {
@@ -1125,5 +1125,54 @@ footer h3{
         margin-right: 0%;
         width: 30%;
     }
+}
+/**------------------------ RESPONSIVE GRANDES TABLETTES/PETITS ORDINATEURS -------------------------------**/
+
+@media only screen and (min-width: 1025px)and (max-width: 1200px)
+{
+    h3
+    {
+        font-size: 1em;
+    }
+
+    /** hebergements ----------------------------------- **/
+
+    .categorie_hebergements 
+    {
+        height: 35em;
+        width: 65%;
+    }
+
+    .annonces_hebergements
+    {
+        height: 35%;
+        margin-left: 0%;
+    }
+
+    .categorie_populaires 
+    {
+        height: 35em;
+        width: 25%;
+        padding-left: 1%;
+    }
+
+    .annonces_populaires
+    {
+        width: 100%;
+        margin-right: 4%;
+    }
+
+    /** Activités -----------------------------**/
+
+    .categorie_activites
+    {
+        height: 20em;
+    }
+
+    .annonces_activites h3
+    {
+        font-size: 0.9em;
+    }
+
 
 }
