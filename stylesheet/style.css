@@ -36,14 +36,14 @@ h1
 h2
 {
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.3em;
     margin-top: 2%;
 }
 
 h3
 {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 p
@@ -82,7 +82,6 @@ button
 
 #menu_inscription
 {
-    margin-right: 0%;
     float: right;
 }
 
@@ -135,7 +134,6 @@ a.active
 #saisie 
 {
     padding: 16px;
-    margin-right: 0%;
     border-left: none;
     border-right:none;
     border-top: 1px solid #F2F2F2;
@@ -198,6 +196,12 @@ a.active
     justify-content: left;
     align-content: left;
     align-items: top;
+    margin-top: 2%;
+}
+
+.info p
+{
+    margin-top: 0%;
 }
 
 .fa-info-circle
@@ -207,7 +211,7 @@ a.active
     border-radius: 100%;
     border-color: #F2F2F2;
     margin-right: 0.5em;
-    margin-top: 1%; 
+    margin-top: 0%; 
     height: min-content; 
 }
 
@@ -233,11 +237,10 @@ a.active
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-around;
-    width: 60%;
+    width: 65%;
     height: 45em;
     background-color: #F2F2F2;
-    border-radius: 1.5em;
-    
+    border-radius: 1.5em;  
 }
 
 .categorie_hebergements h2:nth-child(1) /**titre "Hébergements à Marseille"**/
@@ -267,7 +270,7 @@ a.active
     border : white solid 4px;
     border-radius: 1.5em;
     width: 30%;
-    height: 35%;
+    height: 30%;
     background-color:white;
     box-shadow: 1px 1px 10px grey;
 }
@@ -290,7 +293,7 @@ a.active
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
-    width: 28%;
+    width: 24%;
     height: 45em;
     background-color: #F2F2F2;
     border-radius: 1.5em;
@@ -304,9 +307,10 @@ a.active
     border : white solid 4px;
     border-radius: 1.5em;
     width: 95%;
-    height: 23%;
+    height: 20%;
     background-color:white;
     box-shadow: 1px 1px 10px grey;
+    margin-top: 0%;
 }
 
 .annonces_populaires a
@@ -425,7 +429,7 @@ i.active
 
 .annonces_activites:nth-child(1) /**Tailles des différentes annonces dans l'ordre de visualisation**/
 {
-    height: 87%;
+    height: 90%;
 }
 
 .annonces_activites:nth-child(2)
@@ -440,7 +444,7 @@ i.active
 
 .annonces_activites:nth-child(4)
 {
-    height: 87%;
+    height: 90%;
 }
 .annonces_activites:nth-child(5)
 {
