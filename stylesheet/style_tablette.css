@@ -24,7 +24,7 @@
     }
 
     /** hebergements ----------------------------------- **/
-    #hebergements /**titre "Hébergements à Marseille"**/
+    #hebergements 
     {
         width: 100%;
         margin-bottom: 0%;
@@ -63,7 +63,7 @@
 
     /** Activités -----------------------------**/
 
-    #activites /**titre Activités a Marseille**/
+    #activites 
     {
         margin-top: 5%;
         margin-bottom: 0%;
@@ -100,13 +100,13 @@
     }
 
     .categorie_activites article:nth-child(1),.categorie_activites article:nth-child(2),.categorie_activites article:nth-child(3), .categorie_activites article:nth-child(4),
-    .categorie_activites article:nth-child(5), .categorie_activites article:nth-child(6)/**Tailles des différentes annonces dans l'ordre de visualisation**/
+    .categorie_activites article:nth-child(5), .categorie_activites article:nth-child(6)
     {
         height: 15em;
     }
 
     .categorie_activites article:nth-child(1) img ,.categorie_activites article:nth-child(2) img ,.categorie_activites article:nth-child(3) img ,
-    .categorie_activites article:nth-child(4) img ,.categorie_activites article:nth-child(5) img ,.categorie_activites article:nth-child(6) img /**Tailles des images par annonce**/
+    .categorie_activites article:nth-child(4) img ,.categorie_activites article:nth-child(5) img ,.categorie_activites article:nth-child(6) img
     {
         height: 90%;
     }
