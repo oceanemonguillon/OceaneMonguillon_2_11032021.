@@ -1,4 +1,4 @@
-@font-face /** importation de la police Raleway**/
+@font-face
 {
     font-family: 'Raleway';
     src:   url("Raleway/Raleway-VariableFont_wght.ttf") format('truetype');
@@ -71,7 +71,7 @@ button
 
 /** ------------- HEADER ---------------**/
 
-.logo /** taille et position du logo**/
+.logo
 {
         max-width: 8%;
         height: auto;
@@ -93,7 +93,7 @@ a.active
 /** ------------- MENU ---------------**/
 
 
-nav ul /**couleurs et position du menu (éléments aligné: inline)**/
+nav ul 
 {
     list-style-type: none;
     text-align: right; 
@@ -106,7 +106,7 @@ nav ul /**couleurs et position du menu (éléments aligné: inline)**/
     margin-right: 2%;
 }
 
-#menu_activites a:focus, #menu_hebergements a:focus /**ancre vers sections activités et hebergements cliquées**/
+#menu_activites a:focus, #menu_hebergements a:focus 
 {
     color:#0065FC;
     border-top: thick solid #0065FC;
@@ -116,7 +116,7 @@ nav ul /**couleurs et position du menu (éléments aligné: inline)**/
 
 /** ------------- RECHERCHE ---------------**/
 
-.fa-map-marker-alt /**icone barre de recherche**/
+.fa-map-marker-alt 
 {
     background-color:#F2F2F2;
     border: 1px;
@@ -178,7 +178,7 @@ nav ul /**couleurs et position du menu (éléments aligné: inline)**/
     height: min-content;
 }
 
-.filtres:hover /**Survol des filtres**/
+.filtres:hover 
 {
     background: linear-gradient(to right,#DEEBFF,#0065fc);
 }
@@ -219,7 +219,7 @@ nav ul /**couleurs et position du menu (éléments aligné: inline)**/
 
 /** ------------- FLEXBOX LOGEMENTS ---------------**/
 
-.logements /**comprends hebergements et populaires**/
+.logements 
 {
     display: flex;
     flex-direction: row;
@@ -244,7 +244,7 @@ nav ul /**couleurs et position du menu (éléments aligné: inline)**/
     border-radius: 1.5em;  
 }
 
-#hebergements /**titre "Hébergements à Marseille"**/
+#hebergements 
 {
     width: 100%;
     margin-bottom: 0%;
@@ -436,12 +436,12 @@ i.active
 }
 
 
-.categorie_activites article:nth-child(1) /**Tailles des différentes annonces dans l'ordre de visualisation**/
+.categorie_activites article:nth-child(1) 
 {
   height: 99%;
 }
 
-.categorie_activites article:nth-child(1) img /**Tailles des images par annonce**/
+.categorie_activites article:nth-child(1) img 
 {
   height: 90%;
 }
