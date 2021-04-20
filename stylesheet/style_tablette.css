@@ -1,0 +1,134 @@
+/** ---------------------------- RESPONSIVE TABLETTES -------------------------------**/
+
+@media only screen and (min-width: 769px)and (max-width: 1024px)
+{
+    header
+    {
+        margin: 1%;
+    }
+    
+    nav
+    {
+        margin: 1%;
+    }
+    
+    main
+    {
+        margin: 1%;
+    }
+    /** filtres ---------------------------------------**/
+
+    .filtres 
+    {
+        margin-right: 3%;
+    }
+
+    /** hebergements ----------------------------------- **/
+    #hebergements /**titre "Hébergements à Marseille"**/
+    {
+        width: 100%;
+        margin-bottom: 0%;
+        margin-top: 2%;
+    }
+
+    .categorie_hebergements 
+    {
+        width: 60%;
+        height: 50em;
+    }
+
+    .categorie_hebergements article
+    {
+        width: 45%;
+        height: 25%;
+    }
+
+    .categorie_populaires
+    {
+        width: 35%;  
+        height: 50em; 
+        justify-content: space-between;
+    }
+
+    .categorie_populaires article
+    {
+        margin-bottom: 15%;
+    }
+
+    .categorie_populaires h2
+    {
+        margin-top: 7%;
+    }
+
+
+    /** Activités -----------------------------**/
+
+    #activites /**titre Activités a Marseille**/
+    {
+        margin-top: 5%;
+        margin-bottom: 0%;
+        margin-left: 0%;
+    }
+
+    .categorie_activites
+    {   
+        margin-top: 2%;
+        background-color: white;
+        width:95%;
+        height: 65em;
+        margin-bottom: 5%;
+    }
+
+    .categorie_activites article
+    {
+        box-shadow: 1px 1px 10px grey;
+        padding-bottom: 3%;
+        margin-left: 4%;
+        margin-top: 5%;
+        margin-bottom: 0%;
+        width: 45%;
+    }
+    
+
+    .images_activites
+    {
+        width: 100%;
+        height: 80%;
+        border-top-left-radius: 1.5em;
+        border-top-right-radius: 1.5em;
+        object-fit: cover;
+    }
+
+    .categorie_activites article:nth-child(1),.categorie_activites article:nth-child(2),.categorie_activites article:nth-child(3), .categorie_activites article:nth-child(4),
+    .categorie_activites article:nth-child(5), .categorie_activites article:nth-child(6)/**Tailles des différentes annonces dans l'ordre de visualisation**/
+    {
+        height: 15em;
+    }
+
+    .categorie_activites article:nth-child(1) img ,.categorie_activites article:nth-child(2) img ,.categorie_activites article:nth-child(3) img ,
+    .categorie_activites article:nth-child(4) img ,.categorie_activites article:nth-child(5) img ,.categorie_activites article:nth-child(6) img /**Tailles des images par annonce**/
+    {
+        height: 90%;
+    }
+
+    .categorie_activites article h3
+    {
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+
+    /**Footer ---------------------------------------**/
+
+    footer
+    {
+        justify-content:space-between;
+        line-height: 2em;
+
+    }
+
+    footer div
+    {
+        margin-right: 0%;
+        width: 30%;
+    }
+}
