@@ -33,7 +33,7 @@
 
     /** header -------------------------------------- **/
 
-    .logo /** taille et position du logo**/
+    .logo 
     {
         max-width: 4em;
         height: auto;
@@ -51,7 +51,7 @@
     }
 
 
-    nav ul /**couleurs et position du menu (éléments aligné: inline)**/
+    nav ul
     {
         list-style-type: none;
         text-align: center; 
@@ -72,7 +72,7 @@
         border-bottom: 2px solid #F2F2F2;
     }
     
-    #menu_activites a:focus, #menu_hebergements a:focus /**ancre vers sections activités et hebergements cliquées**/
+    #menu_activites a:focus, #menu_hebergements a:focus 
     {
         border-top: none;
         padding-top: 0%;
@@ -178,7 +178,7 @@
     
     /** hebergements ----------------------------------- **/
 
-    .logements /**comprends hebergements et populaires**/
+    .logements 
     {
         display: flex;
         flex-direction: column;
@@ -256,7 +256,7 @@
 
     /** activités ---------------------------------------**/
 
-    #activites /**titre Activités a Marseille**/
+    #activites 
     {
         margin-top: 7%;
         margin-bottom: 0%;
@@ -297,13 +297,13 @@
     }
 
     .categorie_activites article:nth-child(1),.categorie_activites article:nth-child(2),.categorie_activites article:nth-child(3), .categorie_activites article:nth-child(4),
-    .categorie_activites article:nth-child(5), .categorie_activites article:nth-child(6)/**Tailles des différentes annonces dans l'ordre de visualisation**/
+    .categorie_activites article:nth-child(5), .categorie_activites article:nth-child(6)
     {
         height: 12em;
     }
 
     .categorie_activites article:nth-child(1) img ,.categorie_activites article:nth-child(2) img ,.categorie_activites article:nth-child(3) img ,
-    .categorie_activites article:nth-child(4) img ,.categorie_activites article:nth-child(5) img ,.categorie_activites article:nth-child(6) img /**Tailles des images par annonce**/
+    .categorie_activites article:nth-child(4) img ,.categorie_activites article:nth-child(5) img ,.categorie_activites article:nth-child(6) img 
     {
         height: 90%;
     }
