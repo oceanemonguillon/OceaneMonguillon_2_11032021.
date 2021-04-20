@@ -1,0 +1,48 @@
+/**------------------------ RESPONSIVE GRANDES TABLETTES/PETITS ORDINATEURS -------------------------------**/
+
+@media only screen and (min-width: 1025px)and (max-width: 1200px)
+{
+    h3
+    {
+        font-size: 1em;
+    }
+
+    /** hebergements ----------------------------------- **/
+
+    .categorie_hebergements 
+    {
+        height: 35em;
+        width: 65%;
+    }
+
+    .categorie_hebergements article
+    {
+        height: 35%;
+        margin-left: 0%;
+    }
+
+    .categorie_populaires 
+    {
+        height: 35em;
+        width: 25%;
+        padding-left: 1%;
+    }
+
+    .categorie_populaires article
+    {
+        width: 100%;
+        margin-right: 4%;
+    }
+
+    /** Activités -----------------------------**/
+
+    .categorie_activites
+    {
+        height: 20em;
+    }
+
+    .categorie_activites article h3
+    {
+        font-size: 0.9em;
+    }
+}
