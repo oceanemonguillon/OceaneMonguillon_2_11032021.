@@ -1,8 +1,13 @@
 /**------------------------ RESPONSIVE GRANDES TABLETTES/PETITS ORDINATEURS -------------------------------**/
 
-@media only screen and (min-width: 1024px)and (max-width: 1200px)
+@media only screen and (min-width: 1025px)and (max-width: 1200px)
 {
     h3
+    {
+        font-size: 1em;
+    }
+
+    p
     {
         font-size: 1em;
     }
@@ -25,13 +30,20 @@
     {
         height: 35em;
         width: 25%;
-        padding-left: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .categorie_populaires h2
+    {
+        width: 100%;
     }
 
     .categorie_populaires article
     {
         width: 100%;
-        margin-right: 4%;
+        height: 22%;
+
     }
 
     /** Activités -----------------------------**/
